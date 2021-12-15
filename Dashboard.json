@@ -1,0 +1,687 @@
+{
+	"allRead": true,
+	"allReadWrite": true,
+	"dbotCreatedBy": "",
+	"fromDate": "0001-01-01T00:00:00Z",
+	"fromDateLicense": "0001-01-01T00:00:00Z",
+	"fromServerVersion": "",
+	"hasRole": false,
+	"id": "43a2202d-8c54-43fe-8532-ed551dcf81d4",
+	"isCommon": false,
+	"itemVersion": "",
+	"layout": [
+		{
+			"forceRange": false,
+			"h": 3,
+			"i": "6d1fe960-535b-11ec-88f1-29c678423a34",
+			"id": "6d1fe960-535b-11ec-88f1-29c678423a34",
+			"reflectDimensions": true,
+			"w": 4,
+			"widget": {
+				"category": "",
+				"commitMessage": "",
+				"dataType": "incidents",
+				"dateRange": {
+					"fromDate": "0001-01-01T00:00:00Z",
+					"fromDateLicense": "0001-01-01T00:00:00Z",
+					"period": {
+						"by": "",
+						"byFrom": "days",
+						"byTo": "",
+						"field": "",
+						"fromValue": 7,
+						"toValue": null
+					},
+					"toDate": "0001-01-01T00:00:00Z"
+				},
+				"fromServerVersion": "5.0.0",
+				"id": "active-incidents-by-type",
+				"isPredefined": true,
+				"itemVersion": "1.2.1",
+				"modified": "2021-11-15T09:00:41.1180178Z",
+				"name": "Active Incidents - Line chart",
+				"packID": "CommonWidgets",
+				"packPropagationLabels": [
+					"all"
+				],
+				"params": {
+					"groupBy": [
+						"occurred(d)",
+						"type"
+					]
+				},
+				"prevName": "Active Incidents - Line chart",
+				"propagationLabels": [],
+				"query": "-category:job and -status:archived and -status:closed",
+				"shouldCommit": false,
+				"size": 0,
+				"sort": null,
+				"sortValues": null,
+				"toServerVersion": "",
+				"vcShouldIgnore": false,
+				"vcShouldKeepItemLegacyProdMachine": false,
+				"version": 7,
+				"widgetType": "line"
+			},
+			"x": 0,
+			"y": 3
+		},
+		{
+			"forceRange": false,
+			"h": 3,
+			"i": "771bc240-535b-11ec-88f1-29c678423a34",
+			"id": "771bc240-535b-11ec-88f1-29c678423a34",
+			"reflectDimensions": true,
+			"w": 3,
+			"widget": {
+				"category": "",
+				"commitMessage": "",
+				"dataType": "incidents",
+				"dateRange": {
+					"fromDate": "0001-01-01T00:00:00Z",
+					"fromDateLicense": "0001-01-01T00:00:00Z",
+					"period": {
+						"by": "",
+						"byFrom": "days",
+						"byTo": "",
+						"field": "",
+						"fromValue": 7,
+						"toValue": null
+					},
+					"toDate": "0001-01-01T00:00:00Z"
+				},
+				"fromServerVersion": "5.0.0",
+				"id": "active-incidents-by-severity",
+				"isPredefined": true,
+				"itemVersion": "1.2.1",
+				"modified": "2021-11-15T09:00:41.117638432Z",
+				"name": "Active Incidents - Pie chart",
+				"packID": "CommonWidgets",
+				"packPropagationLabels": [
+					"all"
+				],
+				"params": {
+					"groupBy": [
+						"severity"
+					]
+				},
+				"prevName": "Active Incidents - Pie chart",
+				"propagationLabels": [],
+				"query": "-category:job and -status:archived and -status:closed",
+				"shouldCommit": false,
+				"size": 0,
+				"sort": null,
+				"sortValues": null,
+				"toServerVersion": "",
+				"vcShouldIgnore": false,
+				"vcShouldKeepItemLegacyProdMachine": false,
+				"version": 7,
+				"widgetType": "pie"
+			},
+			"x": 0,
+			"y": 0
+		},
+		{
+			"forceRange": false,
+			"h": 3,
+			"i": "81528140-535b-11ec-88f1-29c678423a34",
+			"id": "81528140-535b-11ec-88f1-29c678423a34",
+			"reflectDimensions": true,
+			"w": 4,
+			"widget": {
+				"category": "",
+				"commitMessage": "",
+				"dataType": "incidents",
+				"dateRange": {
+					"fromDate": "0001-01-01T00:00:00Z",
+					"fromDateLicense": "0001-01-01T00:00:00Z",
+					"period": {
+						"by": "",
+						"byFrom": "days",
+						"byTo": "",
+						"field": "",
+						"fromValue": 7,
+						"toValue": null
+					},
+					"toDate": "0001-01-01T00:00:00Z"
+				},
+				"fromServerVersion": "5.0.0",
+				"id": "incident-types-by-severity",
+				"isPredefined": true,
+				"itemVersion": "1.2.1",
+				"modified": "2021-11-15T09:00:41.121055864Z",
+				"name": "Incident Types by Severity",
+				"packID": "CommonWidgets",
+				"packPropagationLabels": [
+					"all"
+				],
+				"params": {
+					"groupBy": [
+						"type",
+						"severity"
+					]
+				},
+				"prevName": "Incident Types by Severity",
+				"propagationLabels": [],
+				"query": "-category:job and -status:archived and -status:closed",
+				"shouldCommit": false,
+				"size": 0,
+				"sort": null,
+				"sortValues": null,
+				"toServerVersion": "",
+				"vcShouldIgnore": false,
+				"vcShouldKeepItemLegacyProdMachine": false,
+				"version": 7,
+				"widgetType": "bar"
+			},
+			"x": 4,
+			"y": 6
+		},
+		{
+			"forceRange": false,
+			"h": 3,
+			"i": "9881b750-535b-11ec-88f1-29c678423a34",
+			"id": "9881b750-535b-11ec-88f1-29c678423a34",
+			"reflectDimensions": true,
+			"w": 4,
+			"widget": {
+				"category": "",
+				"commitMessage": "",
+				"dataType": "incidents",
+				"dateRange": {
+					"fromDate": "0001-01-01T00:00:00Z",
+					"fromDateLicense": "0001-01-01T00:00:00Z",
+					"period": {
+						"by": "",
+						"byFrom": "days",
+						"byTo": "",
+						"field": "",
+						"fromValue": 7,
+						"toValue": null
+					},
+					"toDate": "0001-01-01T00:00:00Z"
+				},
+				"fromServerVersion": "5.0.0",
+				"id": "top-active-playbooks",
+				"isPredefined": true,
+				"itemVersion": "1.2.1",
+				"modified": "2021-11-15T09:00:41.11835002Z",
+				"name": "Top Active Playbooks",
+				"packID": "CommonWidgets",
+				"packPropagationLabels": [
+					"all"
+				],
+				"params": {
+					"groupBy": [
+						"playbookId"
+					]
+				},
+				"prevName": "Top Active Playbooks",
+				"propagationLabels": [],
+				"query": "status:active -category:job",
+				"shouldCommit": false,
+				"size": 5,
+				"sort": null,
+				"sortValues": null,
+				"toServerVersion": "",
+				"vcShouldIgnore": false,
+				"vcShouldKeepItemLegacyProdMachine": false,
+				"version": 7,
+				"widgetType": "column"
+			},
+			"x": 0,
+			"y": 6
+		},
+		{
+			"forceRange": false,
+			"h": 3,
+			"i": "dcaa7250-535b-11ec-88f1-29c678423a34",
+			"id": "dcaa7250-535b-11ec-88f1-29c678423a34",
+			"reflectDimensions": true,
+			"w": 4,
+			"widget": {
+				"category": "",
+				"commitMessage": "",
+				"dataType": "indicators",
+				"dateRange": {
+					"fromDate": "0001-01-01T00:00:00Z",
+					"fromDateLicense": "0001-01-01T00:00:00Z",
+					"period": {
+						"by": "",
+						"byFrom": "days",
+						"byTo": "",
+						"field": "",
+						"fromValue": 7,
+						"toValue": null
+					},
+					"toDate": "0001-01-01T00:00:00Z"
+				},
+				"fromServerVersion": "5.0.0",
+				"id": "",
+				"isPredefined": false,
+				"itemVersion": "1.2.1",
+				"modified": "2021-11-15T09:00:41.118200222Z",
+				"name": "Indicators By Type Found ",
+				"packID": "CommonWidgets",
+				"packPropagationLabels": [
+					"all"
+				],
+				"params": {
+					"groupBy": [
+						"calculatedTime(d)",
+						"type"
+					]
+				},
+				"prevName": "Indicators Activity by Type",
+				"propagationLabels": [],
+				"query": "",
+				"shouldCommit": false,
+				"size": 0,
+				"sort": null,
+				"sortValues": null,
+				"toServerVersion": "",
+				"vcShouldIgnore": false,
+				"vcShouldKeepItemLegacyProdMachine": false,
+				"version": 0,
+				"widgetType": "line"
+			},
+			"x": 8,
+			"y": 0
+		},
+		{
+			"forceRange": false,
+			"h": 3,
+			"i": "4427fa10-535c-11ec-88f1-29c678423a34",
+			"id": "4427fa10-535c-11ec-88f1-29c678423a34",
+			"reflectDimensions": true,
+			"w": 5,
+			"widget": {
+				"category": "",
+				"commitMessage": "",
+				"dataType": "incidents",
+				"dateRange": {
+					"fromDate": "0001-01-01T00:00:00Z",
+					"fromDateLicense": "0001-01-01T00:00:00Z",
+					"period": {
+						"by": "",
+						"byFrom": "days",
+						"byTo": "",
+						"field": "",
+						"fromValue": 7,
+						"toValue": null
+					},
+					"toDate": "0001-01-01T00:00:00Z"
+				},
+				"fromServerVersion": "5.0.0",
+				"id": "incidents-occurred-per-day",
+				"isPredefined": true,
+				"itemVersion": "1.2.1",
+				"modified": "2021-11-15T09:00:41.121275019Z",
+				"name": "Incidents Occurred Per Day",
+				"packID": "CommonWidgets",
+				"packPropagationLabels": [
+					"all"
+				],
+				"params": {
+					"groupBy": [
+						"occurred"
+					]
+				},
+				"prevName": "Incidents Occurred Per Day",
+				"propagationLabels": [],
+				"query": "-category:job",
+				"shouldCommit": false,
+				"size": 0,
+				"sort": null,
+				"sortValues": null,
+				"toServerVersion": "",
+				"vcShouldIgnore": false,
+				"vcShouldKeepItemLegacyProdMachine": false,
+				"version": 7,
+				"widgetType": "line"
+			},
+			"x": 3,
+			"y": 0
+		},
+		{
+			"forceRange": false,
+			"h": 4,
+			"i": "8dfbb940-543f-11ec-9059-959e0b84d63f",
+			"id": "8dfbb940-543f-11ec-9059-959e0b84d63f",
+			"reflectDimensions": true,
+			"w": 12,
+			"widget": {
+				"category": "",
+				"commitMessage": "",
+				"dataType": "incidents",
+				"dateRange": {
+					"fromDate": "0001-01-01T00:00:00Z",
+					"fromDateLicense": "0001-01-01T00:00:00Z",
+					"period": {
+						"by": "",
+						"byFrom": "days",
+						"byTo": "",
+						"field": "",
+						"fromValue": 7,
+						"toValue": null
+					},
+					"toDate": "0001-01-01T00:00:00Z"
+				},
+				"fromServerVersion": "",
+				"id": "9be5c1d3-4541-497b-8244-59771a3b82af",
+				"isPredefined": false,
+				"itemVersion": "",
+				"modified": "2021-12-03T13:47:17.078050783Z",
+				"name": "Incident History",
+				"packID": "",
+				"params": {
+					"tableColumns": [
+						{
+							"isDefault": true,
+							"key": "id",
+							"position": 0,
+							"width": 110
+						},
+						{
+							"isDefault": true,
+							"key": "name",
+							"position": 2,
+							"width": 300
+						},
+						{
+							"isDefault": true,
+							"key": "type",
+							"position": 3,
+							"width": 200
+						},
+						{
+							"isDefault": true,
+							"key": "severity",
+							"position": 4,
+							"width": 80
+						},
+						{
+							"isDefault": true,
+							"key": "status",
+							"position": 5,
+							"width": 80
+						},
+						{
+							"isDefault": true,
+							"key": "owner",
+							"position": 6,
+							"width": 160
+						},
+						{
+							"isDefault": true,
+							"key": "roles",
+							"position": 7,
+							"width": 160
+						},
+						{
+							"isDefault": true,
+							"key": "playbookId",
+							"position": 8,
+							"width": 150
+						},
+						{
+							"isDefault": true,
+							"key": "occurred",
+							"position": 9,
+							"width": 200
+						},
+						{
+							"isDefault": true,
+							"key": "dueDate",
+							"position": 10,
+							"width": 200
+						}
+					]
+				},
+				"prevName": "PROVA",
+				"propagationLabels": [
+					"all"
+				],
+				"query": "",
+				"shouldCommit": false,
+				"size": 0,
+				"sort": [],
+				"sortValues": null,
+				"toServerVersion": "",
+				"vcShouldIgnore": false,
+				"vcShouldKeepItemLegacyProdMachine": false,
+				"version": 1,
+				"widgetType": "table"
+			},
+			"x": 0,
+			"y": 9
+		},
+		{
+			"forceRange": false,
+			"h": 3,
+			"i": "56a39300-5755-11ec-972c-096e39c5f684",
+			"id": "56a39300-5755-11ec-972c-096e39c5f684",
+			"reflectDimensions": true,
+			"w": 8,
+			"widget": {
+				"category": "",
+				"commitMessage": "",
+				"dataType": "incidents",
+				"dateRange": {
+					"fromDate": "0001-01-01T00:00:00Z",
+					"fromDateLicense": "0001-01-01T00:00:00Z",
+					"period": {
+						"by": "",
+						"byFrom": "days",
+						"byTo": "",
+						"field": "",
+						"fromValue": 7,
+						"toValue": null
+					},
+					"toDate": "0001-01-01T00:00:00Z"
+				},
+				"fromServerVersion": "",
+				"id": "fd523e84-6975-4699-890e-3e5307443260",
+				"isPredefined": false,
+				"itemVersion": "",
+				"modified": "2021-12-07T12:00:26.13983773Z",
+				"name": "Phishing Campaign",
+				"packID": "",
+				"params": {
+					"tableColumns": [
+						{
+							"isDefault": true,
+							"key": "id",
+							"position": 0,
+							"width": 110
+						},
+						{
+							"isDefault": true,
+							"key": "name",
+							"position": 2,
+							"width": 300
+						},
+						{
+							"isDefault": true,
+							"key": "type",
+							"position": 3,
+							"width": 200
+						},
+						{
+							"isDefault": true,
+							"key": "severity",
+							"position": 4,
+							"width": 80
+						},
+						{
+							"isDefault": true,
+							"key": "status",
+							"position": 5,
+							"width": 80
+						},
+						{
+							"isDefault": true,
+							"key": "owner",
+							"position": 6,
+							"width": 160
+						},
+						{
+							"isDefault": true,
+							"key": "roles",
+							"position": 7,
+							"width": 160
+						},
+						{
+							"isDefault": true,
+							"key": "playbookId",
+							"position": 8,
+							"width": 150
+						},
+						{
+							"isDefault": true,
+							"key": "occurred",
+							"position": 9,
+							"width": 200
+						},
+						{
+							"isDefault": true,
+							"key": "dueDate",
+							"position": 10,
+							"width": 200
+						}
+					]
+				},
+				"prevName": "Phishing Campaign",
+				"propagationLabels": [
+					"all"
+				],
+				"query": "-category:job and -status:archived and -status:closed and (type:\"Phishing Campaign\")",
+				"shouldCommit": false,
+				"size": 0,
+				"sort": null,
+				"sortValues": null,
+				"toServerVersion": "",
+				"vcShouldIgnore": false,
+				"vcShouldKeepItemLegacyProdMachine": false,
+				"version": 1,
+				"widgetType": "table"
+			},
+			"x": 4,
+			"y": 3
+		},
+		{
+			"forceRange": false,
+			"h": 3,
+			"i": "253ecf40-5756-11ec-972c-096e39c5f684",
+			"id": "253ecf40-5756-11ec-972c-096e39c5f684",
+			"reflectDimensions": true,
+			"w": 4,
+			"widget": {
+				"category": "",
+				"commitMessage": "",
+				"dataType": "indicators",
+				"dateRange": {
+					"fromDate": "0001-01-01T00:00:00Z",
+					"fromDateLicense": "0001-01-01T00:00:00Z",
+					"period": {
+						"by": "",
+						"byFrom": "days",
+						"byTo": "",
+						"field": "",
+						"fromValue": 180,
+						"toValue": null
+					},
+					"toDate": "0001-01-01T00:00:00Z"
+				},
+				"fromServerVersion": "6.2.0",
+				"id": "ba01f493-c293-4da1-8ddf-ebba4d922f50",
+				"isPredefined": true,
+				"itemVersion": "1.2.2",
+				"modified": "2021-12-02T09:52:19.067434872Z",
+				"name": "Top 10 File Indicators in Related Incidents",
+				"packID": "CommonWidgets",
+				"packPropagationLabels": [
+					"all"
+				],
+				"params": {
+					"enablePagination": true,
+					"tableColumns": [
+						{
+							"displayed": true,
+							"isDefault": true,
+							"key": "indicator_type",
+							"width": 120
+						},
+						{
+							"displayed": true,
+							"isDefault": true,
+							"key": "value",
+							"width": 300
+						},
+						{
+							"displayed": true,
+							"isDefault": true,
+							"key": "score",
+							"width": 120
+						},
+						{
+							"displayed": true,
+							"isDefault": true,
+							"key": "relatedIncCount",
+							"width": 150
+						},
+						{
+							"displayed": true,
+							"isDefault": true,
+							"key": "sourceInstances",
+							"width": 175
+						}
+					]
+				},
+				"prevName": "Top 10 File Indicators in Related Incidents",
+				"propagationLabels": [],
+				"query": "type:File and (verdict:Malicious or verdict:Suspicious) and incident.id:*",
+				"shouldCommit": false,
+				"size": 10,
+				"sort": [
+					{
+						"asc": false,
+						"field": "relatedIncCount",
+						"fieldType": ""
+					}
+				],
+				"sortValues": null,
+				"toServerVersion": "",
+				"vcShouldIgnore": false,
+				"vcShouldKeepItemLegacyProdMachine": false,
+				"version": 2,
+				"widgetType": "table"
+			},
+			"x": 8,
+			"y": 6
+		}
+	],
+	"locked": false,
+	"name": "HoneyPhish Platform",
+	"owner": "vividimeo",
+	"packID": "04a130f9-4111-4094-860c-b72f301202aa",
+	"period": {
+		"by": "",
+		"byFrom": "days",
+		"byTo": "",
+		"field": "",
+		"fromValue": 7,
+		"toValue": null
+	},
+	"previousAllRead": true,
+	"previousAllReadWrite": true,
+	"previousRoles": null,
+	"propagationLabels": [
+		"all"
+	],
+	"roles": null,
+	"system": false,
+	"toDate": "0001-01-01T00:00:00Z",
+	"toServerVersion": "",
+	"version": -1
+}
