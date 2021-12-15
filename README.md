@@ -1,27 +1,18 @@
-# HoneyPhish Platform
+# <img src="./logo_full.png" height="60" />
 
-Infrastruttura che individua proattivamente campagne di spam attraverso email honeypot.
+Infrastruttura XSOAR che individua proattivamente campagne di spam attraverso email honeypot.
 
-## Step di realizzazione
+## Installazione
 
-1. Realizzazione di profili fake che saranno oggetto di spam
-2. Individuazione dei servizi (tramite fonti di threat intelligence) ai quali registrare le mail fake da utilizzare per la ricezione dello spam
-3. Verificare gli IoCs che risultano già stati segnalati come malevoli su fonti OSINT
-4. Ricerca automatizzata su piattaforme social (Twitter/Facebook/ecc...) per l'individuazione delle campagne in corso
-5. Esplodere eventuali allegato/url su sandbox e recuperarne lo stato, se risultanti malevoli inserirli all'interno di un file di blacklist
-6. Realizzazione di un modello per la verifica preliminare della probabilità di spam
+Una volta installata la piattaforma XSOAR, seguire i passaggi:
 
-## Output previsto
+1. Scaricare l'integration _Mail Listener_ dal marketplace;
+2. Nella sezione _integrations_, creare un'istanza inserendo la mail civetta e associare **Phishing (HoneyPhish)** come _Incident type_;
+3. Importare il pacchetto ``HoneyPhish Platform.gz`` nella sezione _troubleshooting_;
+4. Nella sezione _integrations_, creare un'istanza inserendo una OTI key per _SlashNext_;
+5. Creare un job temporale a cadenza giornaliera (_recurring_), associando il playbook **Download URL phishing**;
+6. Nella homepage, importare il file ``Dashboard.gz`` per inserire la dashboard;
 
-1. Copia dell'infrastruttura implementata
-2. Documentazione relativa all'installazione
-3. Documentazione per il run
+OPZIONALE
 
-## Piattaforme e software presumibilmente richiesti
-
-- Linux
-- Python
-- SOAR
-- Sandboxing
-- Machine Learning
-- Protocollo SMTP
+7. Nella sezione troubleshooting, importare il file ``logo_full.png`` in _Full-size logo_ e il file ``logo.png`` in _Minimized logo_.
